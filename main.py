@@ -36,7 +36,8 @@ CORS(
     app,
     origins=[
         "http://localhost:4200",
-        "https://recipe-radar-sl89.onrender.com/"
+        "https://recipe-radar-sl89.onrender.com/",
+        "https://recipe-radar-sl89.onrender.com"
         ],  #  Front‑end dev URL
     supports_credentials=True,
 )
