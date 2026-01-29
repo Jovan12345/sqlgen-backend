@@ -34,7 +34,10 @@ openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 app = Flask(__name__)
 CORS(
     app,
-    origins=["http://localhost:4200"],  #  Front‑end dev URL
+    origins=[
+        "http://localhost:4200",
+        "https://recipe-radar-sl89.onrender.com/"
+        ],  #  Front‑end dev URL
     supports_credentials=True,
 )
 
